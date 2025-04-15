@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🎉 Surprise!</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: "Inter", sans-serif;
+        background: #f7f9fc;
+        color: #1e1e1e;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        padding: 2rem;
+        text-align: center;
+        overflow: hidden;
+      }
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        animation: fadeInDown 1s ease-out;
+      }
+      p {
+        font-size: 1.2rem;
+        margin-bottom: 0.75rem;
+        animation: fadeInUp 1.2s ease-out;
+      }
+
+      .links a:hover {
+        background: #daf0fe;
+        box-shadow: 0 8px 16px rgba(0, 119, 181, 0.1);
+        text-decoration: none;
+      }
+
+      .links {
+        margin-top: 1.5rem;
+        display: flex;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .links a {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+        opacity: 0;
+        transition: transform 0.3s ease, box-shadow 0.3s ease,
+          background 0.3s ease;
+        color: #0077b5;
+        text-decoration: none;
+        font-weight: 600;
+        animation: fadeInUp 0.6s ease-out forwards;
+      }
+      .links a:nth-child(1) {
+        animation-delay: 0.25s;
+      }
+      .links a:nth-child(2) {
+        animation-delay: 0.5s;
+      }
+      .links a:nth-child(3) {
+        animation-delay: 0.75s;
+      }
+
+      .left {
+        animation: fadeInLeft 1.5s ease-out;
+      }
+      .right {
+        animation: fadeInRight 1.5s ease-out;
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(50px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      @keyframes fadeInDown {
+        from {
+          opacity: 0;
+          transform: translateY(-150px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      @keyframes fadeInLeft {
+        from {
+          opacity: 0;
+          transform: translateX(150px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+      @keyframes fadeInRight {
+        from {
+          opacity: 0;
+          transform: translateX(-150px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+    </style>
+    <script>
+      window.onload = function () {
+        setTimeout(() => {
+          alert("🎉 Treffer! Du hast deinen nächsten Entwickler gefunden.");
+        }, 1000);
+      };
+    </script>
+  </head>
+  <body>
+    <h2>Willkommen auf meiner geheimen QR-Seite.</h2>
+    <p class="right">Neugier bringt uns weiter. Und dich hat sie genau hierher geführt.</p>
+<p class="left">Ich bin Steven – und vielleicht dein nächster Entwickler? Lass uns sprechen!</p>
+
+    <div class="links">
+      <a href="mailto:kontakt@steven-kirstein.de">✉️ Mail</a>
+      <a href="https://www.linkedin.com/in/steven-kirstein" target="_blank"
+        >💼 LinkedIn</a
+      >
+      <a href="https://github.com/Mephju90" target="_blank">👨‍💻 GitHub</a>
+    </div>
+  </body>
+</html>
