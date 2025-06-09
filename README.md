@@ -7,10 +7,12 @@ Diese Seite erscheint, wenn jemand den QR-Code auf meinem Lebenslauf scannt.
 
 Eine kurze, animierte Seite :)
 
-## 💡 Features
+## 🔧 Verwendete Technologien
 
-- Animierter Einstiegstext
-- Hover-Effekte für Links
+- HTML5
+- CSS3
+- JavaScript 
+- GitHub Pages 
 
 ## 🌐 Live ansehen
 
